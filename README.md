@@ -60,7 +60,12 @@ eveloDB.create('collection',
 eveloDB.create('accounts', 
   [
     ['username','evelocore'],
-    ['name','EveloCore'],
+    ['name', 
+      {
+         firstname: 'Kumuthu',
+         lastname: 'Prabhasha'
+      }
+    ],
     ['developer','K.Prabhasha'],
     ['email','example@gmail.com']
   ]
@@ -110,7 +115,7 @@ const user = eveloDB.check('collection',
 console.log(user)
 ```
 ```js
-const user = eveloDB.check('accounts', 
+const user = eveloDB.check('accounts',
   [
     ['username','evelocore']
   ]
