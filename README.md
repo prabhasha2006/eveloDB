@@ -39,9 +39,9 @@ Get started:
 ## [Download EveloDB.js](https://github.com/prabhasha2006/eveloDB)
 
 
-### Link your eveloDB
+### Link your EveloDB
 
-> Put in to main javascrip file
+> Put in to main javascript file
 ```js
 const eveloDB = require('./evelodb')
 ```
