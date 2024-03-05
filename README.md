@@ -46,6 +46,7 @@ Get started:
 const eveloDB = require('./evelodb')
 ```
 ## Main functions of eveloDB
+
 - Create a data as a object in the collection.
 ```js
 // Structure
@@ -61,6 +62,7 @@ eveloDB.create('accounts', [
     ['email','example@gmail.com']
 ])
 ```
+
 - Find object by value (one or more...)
 ```js
 // Structure
@@ -87,6 +89,27 @@ console.log(user)
   }
 ]
 ```
+
+- Check avalability (is any object includes the keys/values)
+```js
+// Structure
+const user = eveloDB.check('collection', [
+    ['key','value'],
+    ['key2','value2']
+])
+console.log(user)
+```
+```js
+const user = eveloDB.check('accounts', [
+    ['username','evelocore']
+])
+console.log(user)
+```
+> Output
+```bash
+true
+```
+
 - Update an object
 ```js
 // Structure
@@ -109,6 +132,7 @@ eveloDB.edit('accounts', [
 ])
 // The object includes username='evelocore' and email='example@gmail.com' is successfully updated with second array's values
 ```
+
 - Delete an object
 ```js
 // Structure
