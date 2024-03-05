@@ -1,9 +1,9 @@
 
 <h1 align="center">
   <br>
-  <a><img src="https://i.ibb.co/KbF3bvy/20240305-124100.png" width="200"></a>
+  <a><img src="https://i.ibb.co/t4c363X/20240305-125417.png" width="200"></a>
   <br>
-  EveloDB
+  <b>EveloDB</b>
   <br>
 </h1>
 <h3 align="center">An awesome local database admin with nodejs.<br>Made by EveloCore</h3>
@@ -45,7 +45,7 @@ Get started:
 ```js
 const eveloDB = require('./evelodb')
 ```
-### Main functions of eveloDB
+## Main functions of eveloDB
 - Create a data as a object in the collection.
 ```js
 // Structure
