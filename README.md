@@ -104,6 +104,7 @@ const user = eveloDB.check('accounts', [
     ['username','evelocore']
 ])
 console.log(user)
+// Return a boolean value ( true/false )
 ```
 > Output
 ```bash
