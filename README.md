@@ -101,6 +101,7 @@ console.log(user)
 ```
 
 <hr>
+
 - Search object by piece of value (one or more...)
 ```js
 // Structure
