@@ -55,27 +55,33 @@ eveloDB.create('collection', [
 ])
 ```
 ```js
-eveloDB.create('accounts', [
-    ['username','evelocore'],
-    ['name','EveloCore'],
-    ['developer','K.Prabhasha'],
-    ['email','example@gmail.com']
-])
+eveloDB.create('accounts', 
+    [
+        ['username','evelocore'],
+        ['name','EveloCore'],
+        ['developer','K.Prabhasha'],
+        ['email','example@gmail.com']
+    ]
+)
 ```
 
 - Find object by value (one or more...)
 ```js
 // Structure
-const user = eveloDB.find('collection', [
-    ['key','value'],
-    ['key2','value2']
-])
+const user = eveloDB.find('collection', 
+    [
+        ['key','value'],
+        ['key2','value2']
+    ]
+)
 console.log(user)
 ```
 ```js
-const user = eveloDB.find('accounts', [
-    ['username','evelocore']
-])
+const user = eveloDB.find('accounts', 
+    [
+        ['username','evelocore']
+    ]
+)
 console.log(user)
 ```
 > Output
@@ -93,16 +99,20 @@ console.log(user)
 - Check avalability (is any object includes the keys/values)
 ```js
 // Structure
-const user = eveloDB.check('collection', [
-    ['key','value'],
-    ['key2','value2']
-])
+const user = eveloDB.check('collection', 
+    [
+        ['key','value'],
+        ['key2','value2']
+    ]
+)
 console.log(user)
 ```
 ```js
-const user = eveloDB.check('accounts', [
-    ['username','evelocore']
-])
+const user = eveloDB.check('accounts', 
+    [
+        ['username','evelocore']
+    ]
+)
 console.log(user)
 // Return a boolean value ( true/false )
 ```
@@ -114,37 +124,47 @@ true
 - Update an object
 ```js
 // Structure
-eveloDB.edit('collection', [
-    ['key','value'] // find() object witch one wants to update
-],[
-    ['key','value'],  // replace or add 
-    ['key2','value2'],
-    ['newKey','new value']
-])
+eveloDB.edit('collection', 
+    [
+        ['key','value'] // find() object witch one wants to update
+    ],
+    [
+        ['key','value'],  // replace or add 
+        ['key2','value2'],
+        ['newKey','new value']
+    ]
+)
 ```
 ```js
-eveloDB.edit('accounts', [
-    ['username','evelocore'],
-    ['email','example@gmail.com']
-],[
-    ['name','EveloCore Official'],
-    ['developer','Kumuthu Prabhasha'],
-    ['email','evelocore@gmail.com']
-])
+eveloDB.edit('accounts', 
+    [
+        ['username','evelocore'],
+        ['email','example@gmail.com']
+    ],
+    [
+        ['name','EveloCore Official'],
+        ['developer','Kumuthu Prabhasha'],
+        ['email','evelocore@gmail.com']
+    ]
+)
 // The object includes username='evelocore' and email='example@gmail.com' is successfully updated with second array's values
 ```
 
 - Delete an object
 ```js
 // Structure
-eveloDB.delete('collection', [
-    ['key','value'] // find() object witch one wants to delete
-])
+eveloDB.delete('collection', 
+    [
+        ['key','value'] // find() object witch one wants to delete
+    ]
+)
 ```
 ```js
-eveloDB.delete('accounts', [
-    ['username','evelocore']
-])
+eveloDB.delete('accounts', 
+    [
+        ['username','evelocore']
+    ]
+)
 // The object includes username='evelocore' is fully deleted
 ```
 
