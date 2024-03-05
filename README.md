@@ -50,18 +50,20 @@ const eveloDB = require('./evelodb')
 - Create a data as a object in the collection.
 ```js
 // Structure
-eveloDB.create('collection', [
+eveloDB.create('collection', 
+  [
     ['key','value']
-])
+  ]
+)
 ```
 ```js
 eveloDB.create('accounts', 
-    [
-        ['username','evelocore'],
-        ['name','EveloCore'],
-        ['developer','K.Prabhasha'],
-        ['email','example@gmail.com']
-    ]
+  [
+    ['username','evelocore'],
+    ['name','EveloCore'],
+    ['developer','K.Prabhasha'],
+    ['email','example@gmail.com']
+  ]
 )
 ```
 
@@ -69,18 +71,18 @@ eveloDB.create('accounts',
 ```js
 // Structure
 const user = eveloDB.find('collection', 
-    [
-        ['key','value'],
-        ['key2','value2']
-    ]
+  [
+    ['key','value'],
+    ['key2','value2']
+  ]
 )
 console.log(user)
 ```
 ```js
 const user = eveloDB.find('accounts', 
-    [
-        ['username','evelocore']
-    ]
+  [
+    ['username','evelocore']
+  ]
 )
 console.log(user)
 ```
@@ -88,10 +90,10 @@ console.log(user)
 ```bash
 [
   {
-    username: 'evelocore',
-    name: 'EveloCore',
-    developer: 'K.Prabhasha',
-    email: 'example@gmail.com'
+  username: 'evelocore',
+  name: 'EveloCore',
+  developer: 'K.Prabhasha',
+  email: 'example@gmail.com'
   }
 ]
 ```
@@ -100,18 +102,18 @@ console.log(user)
 ```js
 // Structure
 const user = eveloDB.check('collection', 
-    [
-        ['key','value'],
-        ['key2','value2']
-    ]
+  [
+    ['key','value'],
+    ['key2','value2']
+  ]
 )
 console.log(user)
 ```
 ```js
 const user = eveloDB.check('accounts', 
-    [
-        ['username','evelocore']
-    ]
+  [
+    ['username','evelocore']
+  ]
 )
 console.log(user)
 // Return a boolean value ( true/false )
@@ -125,27 +127,27 @@ true
 ```js
 // Structure
 eveloDB.edit('collection', 
-    [
-        ['key','value'] // find() object witch one wants to update
-    ],
-    [
-        ['key','value'],  // replace or add 
-        ['key2','value2'],
-        ['newKey','new value']
-    ]
+  [
+    ['key','value'] // find() object witch one wants to update
+  ],
+  [
+    ['key','value'],  // replace or add 
+    ['key2','value2'],
+    ['newKey','new value']
+  ]
 )
 ```
 ```js
 eveloDB.edit('accounts', 
-    [
-        ['username','evelocore'],
-        ['email','example@gmail.com']
-    ],
-    [
-        ['name','EveloCore Official'],
-        ['developer','Kumuthu Prabhasha'],
-        ['email','evelocore@gmail.com']
-    ]
+  [
+    ['username','evelocore'],
+    ['email','example@gmail.com']
+  ],
+  [
+    ['name','EveloCore Official'],
+    ['developer','Kumuthu Prabhasha'],
+    ['email','evelocore@gmail.com']
+  ]
 )
 // The object includes username='evelocore' and email='example@gmail.com' is successfully updated with second array's values
 ```
@@ -154,16 +156,16 @@ eveloDB.edit('accounts',
 ```js
 // Structure
 eveloDB.delete('collection', 
-    [
-        ['key','value'] // find() object witch one wants to delete
-    ]
+  [
+    ['key','value'] // find() object witch one wants to delete
+  ]
 )
 ```
 ```js
 eveloDB.delete('accounts', 
-    [
-        ['username','evelocore']
-    ]
+  [
+    ['username','evelocore']
+  ]
 )
 // The object includes username='evelocore' is fully deleted
 ```
@@ -181,7 +183,7 @@ eveloDB.reset('accounts')
 
 <p align="center">
 <a href="#"><img title="Creator" src="https://img.shields.io/badge/Creator-EveloCore-red.svg?style=for-the-badge&logo=github"></a>
-    <br><br>
-    Copyright 2024 © EveloCore developers - All rights reserved
+  <br><br>
+  Copyright 2024 © EveloCore developers - All rights reserved
 </p>
 
