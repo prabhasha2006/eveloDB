@@ -25,7 +25,7 @@
 Get started:
 - Download the <b>evelodb.js</b>
 - Paste it where do you want to create database.
-- First time it will be create a directory './evelodb/' automatically.
+- First time it will be create a directory './evelodatabase/' automatically.
 - require evelodb.js to your main script.
 
 ## [Download EveloDB.js](https://github.com/prabhasha2006/eveloDB)
