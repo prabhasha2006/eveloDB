@@ -13,15 +13,43 @@
 ## Requirements
 > Nodejs
 
-## npm packages
-> "fs" (inbuild package)
+## + Get started with manually
+Get started:
+- Download the <b>evelodb.js</b>
+- Paste it where do you want to create database.
+- First time it will be create a directory './evelodatabase/' automatically.
+- require evelodb.js to your main script.
+
+### [Download EveloDB.js](https://github.com/prabhasha2006/eveloDB)
+
+#### Link EveloDB.js
+
+> Put in to main javascript file
+```js
+const eveloDB = require('./evelodb')
+```
+
+<hr>
+
+## + Get stared with npm
+npm install
+```bash
+npm i evelodb
+```
+
+### Link your EveloDB
+> Put in to main javascript file
+```js
+const eveloDB = require('evelodb')
+```
+
 
 ### About this
 - ✓ Manage with json.
 - ✓ Fast and easy.
 - ✓ Only nodejs required.
 
-## Easy Installation
+<!-- ## Easy Installation
 Get started:
 - Download the <b>evelodb.js</b>
 - Paste it where do you want to create database.
@@ -29,15 +57,9 @@ Get started:
 - require evelodb.js to your main script.
 
 ## [Download EveloDB.js](https://github.com/prabhasha2006/eveloDB)
-
+ -->
 <hr>
 
-### Link your EveloDB
-
-> Put in to main javascript file
-```js
-const eveloDB = require('./evelodb')
-```
 ## Main functions of eveloDB
 
 <hr>
@@ -131,6 +153,19 @@ console.log(user)
   email: 'example@gmail.com'
   }
 ]
+```
+
+<hr>
+
+- Get all objects in collection
+```js
+// Structure
+const user = eveloDB.get('collection')
+console.log(user)
+```
+```js
+const user = eveloDB.get('accounts')
+console.log(user)
 ```
 
 <hr>
