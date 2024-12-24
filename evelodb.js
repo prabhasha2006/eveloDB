@@ -148,6 +148,14 @@ class eveloDB {
         return { success: true };
     }
 
+    inject(collection, data) {
+        if (!collection) return { err: 'collection required!' };
+        if (!data) return { err: 'conditions required!' };
+
+        fs.writeFileSync(`${filePath}/${collection}.${fileExt}`, JSON.stringify(data, null, tabspace))
+        return { success: true };
+    }
+
     find(collection, conditions) {
         if (!collection) return { err: 'collection required!' };
         if (!conditions) return { err: 'conditions required!' };
