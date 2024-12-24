@@ -112,6 +112,18 @@ const users = db.get('accounts');
 console.log(users)
 ```
 
+### Inject collection
+```js
+// Structure
+const result = db.get('collection', data);
+
+// Example
+const users = db.get('accounts', [
+  { id: 1, name: 'Evelocore' },
+  { id: 2, name: 'K.Prabhasha' },
+]);
+```
+
 ### Check Existence
 ```js
 // Structure
