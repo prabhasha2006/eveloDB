@@ -1,1 +1,248 @@
-const _0x5957fc=_0x481e;(function(_0x8563c5,_0x34a1f2){const _0x4843cd=_0x481e,_0x5cf601=_0x8563c5();while(!![]){try{const _0x3e3b91=parseInt(_0x4843cd(0x104))/0x1+-parseInt(_0x4843cd(0xfb))/0x2*(parseInt(_0x4843cd(0x103))/0x3)+parseInt(_0x4843cd(0xfc))/0x4+parseInt(_0x4843cd(0xfa))/0x5+-parseInt(_0x4843cd(0xf6))/0x6+parseInt(_0x4843cd(0xe4))/0x7*(parseInt(_0x4843cd(0xf1))/0x8)+-parseInt(_0x4843cd(0xf0))/0x9;if(_0x3e3b91===_0x34a1f2)break;else _0x5cf601['push'](_0x5cf601['shift']());}catch(_0x5f3370){_0x5cf601['push'](_0x5cf601['shift']());}}}(_0x38e9,0xe71ba));function _0x38e9(){const _0x5f4b93=['isArray','249XqLICx','666128VpkFdx','forEach','exports','filter','stringify','7MPKofd','readFileSync','collection\x20required!','get','find','new\x20data\x20required!','writeFileSync','keys','mkdirSync','every','delete','toString','8487504zoUsTk','10977952oxHFwa','push','parse','edit','reset','6230058FCeFfi','object','.json','./evelodatabase','8526280wLMOQO','33464ECvULo','2292580groLyU','length','existsSync','utf8','conditions\x20required!','data\x20required!'];_0x38e9=function(){return _0x5f4b93;};return _0x38e9();}const fs=require('fs'),filePath=_0x5957fc(0xf9),tabspace=0x3;function deepCompare(_0x22125d,_0x4aeac1){const _0x381ff2=_0x5957fc;if(typeof _0x22125d===_0x381ff2(0xf7)&&typeof _0x4aeac1===_0x381ff2(0xf7)){if(Array[_0x381ff2(0x102)](_0x22125d)){if(!Array[_0x381ff2(0x102)](_0x4aeac1))return![];if(_0x22125d['length']!==_0x4aeac1[_0x381ff2(0xfd)])return![];for(let _0x189379=0x0;_0x189379<_0x22125d[_0x381ff2(0xfd)];_0x189379++){if(!deepCompare(_0x22125d[_0x189379],_0x4aeac1[_0x189379]))return![];}return!![];}else{const _0x4fc4d9=Object[_0x381ff2(0xeb)](_0x22125d),_0x3b34b4=Object[_0x381ff2(0xeb)](_0x4aeac1);if(_0x4fc4d9[_0x381ff2(0xfd)]!==_0x3b34b4[_0x381ff2(0xfd)])return![];for(let _0x2df81e of _0x4fc4d9){if(!deepCompare(_0x22125d[_0x2df81e],_0x4aeac1[_0x2df81e]))return![];}return!![];}}else return _0x22125d===_0x4aeac1;}class eveloDB{constructor(){}['create'](_0x12693c,_0x1d8a66){const _0x4542ab=_0x5957fc;!fs[_0x4542ab(0xfe)](filePath)&&fs[_0x4542ab(0xec)](filePath);if(!_0x12693c)return{'err':_0x4542ab(0xe6)};if(!_0x1d8a66)return{'err':'data\x20required!'};let _0x1b6d9d={};for(var _0x196249 in _0x1d8a66){_0x1b6d9d[_0x1d8a66[_0x196249][0x0]]=_0x1d8a66[_0x196249][0x1];}if(fs[_0x4542ab(0xfe)](filePath+'/'+_0x12693c+_0x4542ab(0xf8))){let _0x4228c0=fs[_0x4542ab(0xe5)](filePath+'/'+_0x12693c+_0x4542ab(0xf8),'utf8');_0x4228c0=JSON[_0x4542ab(0xf3)](_0x4228c0),_0x4228c0[_0x4542ab(0xf2)](_0x1b6d9d),fs[_0x4542ab(0xea)](filePath+'/'+_0x12693c+_0x4542ab(0xf8),JSON[_0x4542ab(0xe3)](_0x4228c0,null,tabspace),function(_0x4f6364){return{'err':0x190};});}else{let _0x3581de=[];_0x3581de[_0x4542ab(0xf2)](_0x1b6d9d),fs[_0x4542ab(0xea)](filePath+'/'+_0x12693c+'.json',JSON[_0x4542ab(0xe3)](_0x3581de,null,tabspace),function(_0x432e6b){return{'err':0x190};});}}[_0x5957fc(0xee)](_0x2e3730,_0x21edba){const _0x31a8d6=_0x5957fc;if(!_0x2e3730)return{'err':_0x31a8d6(0xe6)};if(!_0x21edba)return{'err':_0x31a8d6(0x101)};if(!fs[_0x31a8d6(0xfe)](filePath+'/'+_0x2e3730+_0x31a8d6(0xf8)))return{'err':0x194};let _0x86a930=fs['readFileSync'](filePath+'/'+_0x2e3730+_0x31a8d6(0xf8),'utf8');_0x86a930=JSON[_0x31a8d6(0xf3)](_0x86a930);const _0x542029=_0x86a930[_0x31a8d6(0xe2)](_0x51c5ac=>{const _0x4016e9=_0x31a8d6;return!_0x21edba[_0x4016e9(0xed)](_0x36a8f2=>{const _0x598aa0=_0x4016e9,[_0x517b85,_0x5c2ae3]=_0x36a8f2;if(typeof _0x5c2ae3===_0x598aa0(0xf7))return deepCompare(_0x51c5ac[_0x517b85],_0x5c2ae3);else return Array[_0x598aa0(0x102)](_0x5c2ae3)?deepCompare(_0x51c5ac[_0x517b85],_0x5c2ae3):_0x51c5ac[_0x517b85]===_0x5c2ae3;});});return fs[_0x31a8d6(0xea)](filePath+'/'+_0x2e3730+_0x31a8d6(0xf8),JSON[_0x31a8d6(0xe3)](_0x542029,null,tabspace)),{'success':!![]};}[_0x5957fc(0xe8)](_0x22e82e,_0x5ab7cb){const _0x54ed39=_0x5957fc;if(!_0x22e82e)return{'err':_0x54ed39(0xe6)};if(!_0x5ab7cb)return{'err':_0x54ed39(0x100)};let _0x51b9ed=fs[_0x54ed39(0xe5)](filePath+'/'+_0x22e82e+_0x54ed39(0xf8),_0x54ed39(0xff));return _0x51b9ed=JSON[_0x54ed39(0xf3)](_0x51b9ed),_0x51b9ed[_0x54ed39(0xe2)](_0x49a28d=>{const _0x2a571e=_0x54ed39;return _0x5ab7cb[_0x2a571e(0xed)](_0x3b2af6=>{const [_0x2494ef,_0x215df0]=_0x3b2af6;return _0x49a28d[_0x2494ef]===_0x215df0;});});}['search'](_0x3ce40a,_0x3d956e){const _0x3764b4=_0x5957fc;if(!_0x3ce40a)return{'err':_0x3764b4(0xe6)};if(!_0x3d956e)return{'err':_0x3764b4(0x100)};let _0x1e6fcf=fs[_0x3764b4(0xe5)](filePath+'/'+_0x3ce40a+_0x3764b4(0xf8),_0x3764b4(0xff));return _0x1e6fcf=JSON[_0x3764b4(0xf3)](_0x1e6fcf),_0x1e6fcf[_0x3764b4(0xe2)](_0x976cd3=>{return _0x3d956e['every'](_0x2d3e98=>{const _0x2daf01=_0x481e,[_0x265c6e,_0x44fbbd]=_0x2d3e98;if(_0x976cd3[_0x265c6e]!==undefined&&_0x976cd3[_0x265c6e]!==null)return _0x976cd3[_0x265c6e][_0x2daf01(0xef)]()['match'](new RegExp(_0x44fbbd,'i'));return![];});});}[_0x5957fc(0xe7)](_0x128ec6){const _0x27a568=_0x5957fc;if(!_0x128ec6)return{'err':_0x27a568(0xe6)};let _0x41665d=fs[_0x27a568(0xe5)](filePath+'/'+_0x128ec6+_0x27a568(0xf8),_0x27a568(0xff));return _0x41665d=JSON[_0x27a568(0xf3)](_0x41665d),_0x41665d;}['check'](_0x529632,_0x128f2c){const _0x5dcefe=_0x5957fc;!fs['existsSync'](filePath+'/'+_0x529632+_0x5dcefe(0xf8))&&fs['mkdirSync'](filePath+'/'+_0x529632+_0x5dcefe(0xf8));if(!_0x529632)return{'err':'collection\x20required!'};if(!_0x128f2c)return{'err':_0x5dcefe(0x100)};return this['find'](_0x529632,_0x128f2c)['length']>0x0;}[_0x5957fc(0xf4)](_0x5429f3,_0x31c08f,_0xc4e1ea){const _0x55416c=_0x5957fc;if(!_0x5429f3)return{'err':'collection\x20required!'};if(!_0x31c08f)return{'err':_0x55416c(0x100)};if(!_0xc4e1ea)return{'err':_0x55416c(0xe9)};let _0x13bc2b=fs[_0x55416c(0xe5)](filePath+'/'+_0x5429f3+_0x55416c(0xf8),_0x55416c(0xff));return _0x13bc2b=JSON[_0x55416c(0xf3)](_0x13bc2b),_0x13bc2b[_0x55416c(0xe0)](_0x4d27f2=>{const _0x2909d4=_0x55416c;_0x31c08f[_0x2909d4(0xed)](_0x263098=>{const _0x15f048=_0x2909d4,[_0x8920ba,_0x10f077]=_0x263098;if(typeof _0x10f077===_0x15f048(0xf7))return deepCompare(_0x4d27f2[_0x8920ba],_0x10f077);else return Array[_0x15f048(0x102)](_0x10f077)?deepCompare(_0x4d27f2[_0x8920ba],_0x10f077):_0x4d27f2[_0x8920ba]===_0x10f077;})&&_0xc4e1ea[_0x2909d4(0xe0)](_0x3be7ae=>{const [_0x2d0dc1,_0x20269d]=_0x3be7ae;_0x4d27f2[_0x2d0dc1]=_0x20269d;});}),fs[_0x55416c(0xea)](filePath+'/'+_0x5429f3+'.json',JSON['stringify'](_0x13bc2b,null,tabspace)),{'success':!![]};}[_0x5957fc(0xf5)](_0x574d5b){const _0x327bbc=_0x5957fc;if(!_0x574d5b)return{'err':_0x327bbc(0xe6)};return!fs[_0x327bbc(0xfe)](filePath+'/'+_0x574d5b+'.json')?{'err':0x194}:(fs['unlinkSync'](filePath+'/'+_0x574d5b+'.json'),{'success':!![]});}}function _0x481e(_0x5643eb,_0x3451b1){const _0x38e9ea=_0x38e9();return _0x481e=function(_0x481ed8,_0x644cc2){_0x481ed8=_0x481ed8-0xe0;let _0x35883f=_0x38e9ea[_0x481ed8];return _0x35883f;},_0x481e(_0x5643eb,_0x3451b1);}module[_0x5957fc(0xe1)]=new eveloDB();
+const fs = require('fs');
+const filePath = './evelodatabase';
+const fileExt = 'json';
+const tabspace = 3;
+
+// Deep comparison function
+function deepCompare(obj1, obj2) {
+    if (typeof obj1 === 'object' && typeof obj2 === 'object') {
+        if (Array.isArray(obj1)) {
+            if (!Array.isArray(obj2)) return false;
+            if (obj1.length !== obj2.length) return false;
+            for (let i = 0; i < obj1.length; i++) {
+                if (!deepCompare(obj1[i], obj2[i])) return false;
+            }
+            return true;
+        } else {
+            const keys1 = Object.keys(obj1);
+            const keys2 = Object.keys(obj2);
+            if (keys1.length !== keys2.length) return false;
+            for (let key of keys1) {
+                if (!deepCompare(obj1[key], obj2[key])) return false;
+            }
+            return true;
+        }
+    } else {
+        return obj1 === obj2;
+    }
+}
+
+// B-Tree Node class
+class BTreeNode {
+    constructor(isLeaf) {
+        this.keys = [];
+        this.children = [];
+        this.isLeaf = isLeaf;
+    }
+}
+
+// B-Tree class
+class BTree {
+    constructor(order) {
+        this.order = order;
+        this.root = new BTreeNode(true);
+    }
+
+    insert(key, value) {
+        let root = this.root;
+        if (root.keys.length === this.order - 1) {
+            let newRoot = new BTreeNode(false);
+            newRoot.children.push(root);
+            this.splitChild(newRoot, 0);
+            this.root = newRoot;
+        }
+        this.insertNonFull(this.root, [key, value]);
+    }
+
+    insertNonFull(node, keyValue) {
+        let i = node.keys.length - 1;
+        if (node.isLeaf) {
+            node.keys.push(null);
+            while (i >= 0 && keyValue[0] < node.keys[i][0]) {
+                node.keys[i + 1] = node.keys[i];
+                i--;
+            }
+            node.keys[i + 1] = keyValue;
+        } else {
+            while (i >= 0 && keyValue[0] < node.keys[i][0]) {
+                i--;
+            }
+            i++;
+            if (node.children[i].keys.length === this.order - 1) {
+                this.splitChild(node, i);
+                if (keyValue[0] > node.keys[i][0]) {
+                    i++;
+                }
+            }
+            this.insertNonFull(node.children[i], keyValue);
+        }
+    }
+
+    splitChild(node, i) {
+        let order = this.order;
+        let child = node.children[i];
+        let newNode = new BTreeNode(child.isLeaf);
+        node.keys.splice(i, 0, child.keys[Math.floor(order / 2)]);
+        node.children.splice(i + 1, 0, newNode);
+        newNode.keys = child.keys.splice(Math.floor(order / 2) + 1);
+        if (!child.isLeaf) {
+            newNode.children = child.children.splice(Math.floor(order / 2) + 1);
+        }
+    }
+
+    traverse(node) {
+        let result = [];
+        for (let i = 0; i < node.keys.length; i++) {
+            if (!node.isLeaf) {
+                result = result.concat(this.traverse(node.children[i]));
+            }
+            result.push(node.keys[i][1]);
+        }
+        if (!node.isLeaf && node.children.length > node.keys.length) {
+            result = result.concat(this.traverse(node.children[node.keys.length]));
+        }
+        return result;
+    }
+}
+
+// eveloDB class
+class eveloDB {
+    constructor() {
+        this.btree = new BTree(3); // B-Tree order 3
+    }
+
+    create(collection, data) {
+        if (!fs.existsSync(filePath)) {
+            fs.mkdirSync(filePath);
+        }
+        if (!collection) return { err: 'collection required!' };
+        if (!data) return { err: 'data required!' };
+        let object = { ...data }; // Directly use the object structure
+        if (fs.existsSync(`${filePath}/${collection}.${fileExt}`)) {
+            let db = JSON.parse(fs.readFileSync(`${filePath}/${collection}.${fileExt}`, 'utf8'));
+            db.push(object);
+            fs.writeFileSync(`${filePath}/${collection}.${fileExt}`, JSON.stringify(db, null, tabspace));
+        } else {
+            let db = [object];
+            fs.writeFileSync(`${filePath}/${collection}.${fileExt}`, JSON.stringify(db, null, tabspace));
+        }
+        this.btree.insert(object.token, object); // Insert into B-Tree
+    }
+
+    delete(collection, conditions) {
+        if (!collection) return { err: 'collection required!' };
+        if (!conditions) return { err: 'conditions required!' };
+        if (!fs.existsSync(`${filePath}/${collection}.${fileExt}`)) return { err: 404 };
+
+        let db = JSON.parse(fs.readFileSync(`${filePath}/${collection}.${fileExt}`, 'utf8'));
+        const filteredData = db.filter(item => {
+            return !Object.entries(conditions).every(([key, value]) => {
+                if (typeof value === 'object') {
+                    return deepCompare(item[key], value);
+                } else {
+                    return item[key] === value;
+                }
+            });
+        });
+        fs.writeFileSync(`${filePath}/${collection}.${fileExt}`, JSON.stringify(filteredData, null, tabspace));
+        return { success: true };
+    }
+
+    find(collection, conditions) {
+        if (!collection) return { err: 'collection required!' };
+        if (!conditions) return { err: 'conditions required!' };
+
+        let db = JSON.parse(fs.readFileSync(`${filePath}/${collection}.${fileExt}`, 'utf8'));
+        return db.filter(item => {
+            return Object.entries(conditions).every(([key, value]) => {
+                return item[key] === value;
+            });
+        });
+    }
+
+    search(collection, conditions) {
+        if (!collection) return { err: 'collection required!' };
+        if (!conditions) return { err: 'conditions required!' };
+
+        let db = JSON.parse(fs.readFileSync(`${filePath}/${collection}.${fileExt}`, 'utf8'));
+        return db.filter(item => {
+            return Object.entries(conditions).every(([key, value]) => {
+                if (item[key] !== undefined && item[key] !== null) {
+                    return item[key].toString().match(new RegExp(value, 'i'));
+                }
+                return false;
+            });
+        });
+    }
+
+    get(collection) {
+        if (!collection) return { err: 'collection required!' };
+
+        if (fs.existsSync(`${filePath}/${collection}.${fileExt}`)) {
+            let db = JSON.parse(fs.readFileSync(`${filePath}/${collection}.${fileExt}`, 'utf8'));
+            return db;
+        } else {
+            return { err: 404 };
+        }
+    }
+
+    check(collection, data) {
+        if (!collection) return { err: 'collection required!' };
+        if (!data) return { err: 'conditions required!' };
+
+        return this.find(collection, data).length > 0;
+    }
+
+    edit(collection, conditions, newData) {
+        if (!collection) return { err: 'collection required!' };
+        if (!conditions) return { err: 'conditions required!' };
+        if (!newData) return { err: 'new data required!' };
+
+        let db = JSON.parse(fs.readFileSync(`${filePath}/${collection}.${fileExt}`, 'utf8'));
+        db.forEach(item => {
+            if (Object.entries(conditions).every(([key, value]) => {
+                return item[key] === value;
+            })) {
+                Object.entries(newData).forEach(([key, value]) => {
+                    item[key] = value;
+                });
+            }
+        });
+
+        fs.writeFileSync(`${filePath}/${collection}.${fileExt}`, JSON.stringify(db, null, tabspace));
+        return { success: true };
+    }
+
+    reset(collection) {
+        if (!collection) return { err: 'collection required!' };
+        if (fs.existsSync(`${filePath}/${collection}.${fileExt}`)) {
+            fs.unlinkSync(`${filePath}/${collection}.${fileExt}`);
+            return { success: true };
+        } else {
+            return { err: 404 };
+        }
+    }
+
+    // Rebuild B-Tree from file
+    rebuildBTree(collection) {
+        if (!collection) return { err: 'collection required!' };
+        if (!fs.existsSync(`${filePath}/${collection}.${fileExt}`)) return { err: 404 };
+
+        let db = JSON.parse(fs.readFileSync(`${filePath}/${collection}.${fileExt}`, 'utf8'));
+        this.btree = new BTree(3); // Reinitialize B-Tree
+        db.forEach(item => {
+            if (item.token) {
+                this.btree.insert(item.token, item);
+            } else {
+                console.error(`Item is missing a token:`, item);
+            }
+        });
+    }
+
+    // Retrieve all items from B-Tree
+    getAllFromBTree() {
+        return this.btree.traverse(this.btree.root);
+    }
+}
+
+module.exports = eveloDB;
